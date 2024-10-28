@@ -1,0 +1,10 @@
+footer {
+    background-color: #ffffff;
+    color: #2c3e50;
+    padding: 40px 0;
+}
+
+.pembatas {
+    height: 50px;
+    background: linear-gradient(45deg, #2c3e50 25%, #1abc9c 25%, #1abc9c 50%, #e67e22 50%, #e67e22 75%, #2c3e50 75%);
+}

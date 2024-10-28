@@ -1,0 +1,100 @@
+.guest-menu {
+    position: fixed;
+    right: 0; /* Pindahkan ke kanan */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang dengan efek transparan */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Pastikan sidebar berada di atas konten lainnya */
+    padding: 20px; /* Tambahkan padding untuk konten */
+}
+
+.guest-menu-toggle {
+    position: fixed;
+    right: 10px; /* Pindahkan ke kanan */
+    top: 10px;
+    cursor: pointer;
+    z-index: 1001; /* Pastikan tombol berada di atas sidebar */
+}
+
+.guest-menu.open {
+    transform: translateX(0);
+}
+
+.guest-close-btn {
+    position: absolute;
+    right: 10px; /* Pindahkan ke kanan */
+    top: 10px;
+    cursor: pointer;
+}
+
+.guest-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0; /* Tambahkan margin atas untuk memisahkan dari header */
+}
+
+.guest-menu ul li {
+    padding: 10px 0; /* Tambahkan padding vertikal */
+}
+
+.guest-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px; /* Sesuaikan ukuran font */
+}
+
+.guest-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.guest-menu h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Garis bawah untuk header */
+    font-size: 18px; /* Sesuaikan ukuran font */
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .nav-container {
+        justify-content: center;
+    }
+}
+
+

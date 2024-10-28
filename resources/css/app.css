@@ -1,0 +1,36 @@
+/* Tambahkan ini ke akhir file ruang-admin.css */
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ubah warna teks menjadi putih */
+}
+
+.sidebar-brand .sidebar-brand-icon .logo {
+    height: 40px; /* Sesuaikan ukuran logo */
+    margin-right: 10px;
+}
+
+.sidebar-brand .sidebar-brand-text {
+    color: white; /* Ubah warna teks menjadi putih */
+    font-size: 1.2em; /* Sesuaikan ukuran teks */
+    font-weight: bold; /* Sesuaikan gaya teks */
+}
+
+.card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card .card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card .card-text {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
