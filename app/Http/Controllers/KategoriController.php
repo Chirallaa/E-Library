@@ -31,7 +31,7 @@ class KategoriController extends Controller
     {
         $this->kategoriService->storeKategori($request);
         Alert::success('Berhasil', 'Berhasil Menambahkan Kategori');
-        return redirect('/kategori');
+        return redirect('/katalog');
     }
 
     public function show($id)
@@ -50,13 +50,13 @@ class KategoriController extends Controller
     {
         $this->kategoriService->updateKategori($request, $id);
         Alert::success('Berhasil', 'Update Success');
-        return redirect('/kategori');
+        return redirect('/katalog');
     }
 
     public function destroy($id)
     {
         $this->kategoriService->deleteKategori($id);
         Alert::success('Berhasil', 'Berhasil Menghapus Kategori');
-        return redirect('kategori');
+        return redirect('/katalog');
     }
 }

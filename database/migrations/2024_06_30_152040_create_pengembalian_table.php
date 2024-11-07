@@ -17,8 +17,8 @@ class CreatePengembalianTable extends Migration
             $table->id();
             $table->foreignId('peminjaman_id')->constrained('riwayat_pinjam')->onDelete('cascade');
             $table->date('tanggal_kembali');
-            $table->integer('denda_manual')->default(0);
             $table->string('kondisi')->default('baik');
+            $table->integer('denda_manual')->default(0);
             $table->timestamps();
         });
     }

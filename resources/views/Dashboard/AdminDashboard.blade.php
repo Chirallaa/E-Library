@@ -157,6 +157,24 @@
             </div>
         </div>
 
+         <!-- Jumlah Buku Hilang Card Example -->
+         <div class="col-xl-3 col-md-6 mb-4">
+            <a href="" class="text-decoration-none">
+            <div class="card h-100 bg-gradient-danger">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-sm text-light font-weight-bold text-uppercase mb-1" style="font-size:.8rem;">Pendapatan</div>
+                            <div class="h5 mb-0 mr-3 font-weight-bold text-light">{{ $denda }}</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-book-medical fa-3x text-light"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- Table-->
     <h1 class="text-primary"> Riwayat Peminjaman</h1>
     <div class="col-lg-auto">

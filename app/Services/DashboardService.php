@@ -35,6 +35,7 @@ class DashboardService
                 'jumlah_buku_rusak' => Pengembalian::where('kondisi', 'rusak')->count(),
                 'jumlah_buku_hilang' => Pengembalian::where('kondisi', 'hilang')->count(),
                 'jumlah_buku_baru' => Buku::where('created_at', '>=', now()->subMonth())->count(),
+                'denda' => Peminjaman::where('denda', '>', 0)->sum('denda'),
             ];
         }
 

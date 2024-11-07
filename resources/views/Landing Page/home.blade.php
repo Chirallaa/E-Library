@@ -10,7 +10,8 @@
 <script src="{{ asset('js/menu.js') }}"></script>
 <div class="container">
     <div class="content">
-        <!-- Always display the search bar -->
+        
+        <!-- Continue with existing search bar -->
         <div class="search-bar-container" style="background-image: url('{{ asset('img/bg.jpg') }}'); background-size: cover; background-position: center; padding: 20px; border-radius: 10px; text-align: center;">
             <div class="search-bar">
                 <form action="{{ route('home') }}" method="GET" class="search-form">
@@ -135,19 +136,19 @@
                 <div class="dashboard-link">
                     <a style="text-decoration: none; color: inherit;" href="{{ route('register') }}">
                         <i class="fa fa-credit-card"></i>
-                        <span>GET A CARD</span>
+                        <span>Daftar</span>
                     </a>
                 </div>
                 <div class="dashboard-link">
                     <a style="text-decoration: none; color: inherit;" href="{{ route('scan.rfid') }}">
                         <i class="fa fa-users"></i>
-                        <span>GUESTS</span>
+                        <span>Tamu</span>
                     </a>
                 </div>
                 <div class="dashboard-link">
                     <a style="text-decoration: none; color: inherit;" href="{{ route('showPetugas') }}">
                         <i class="fa fa-info-circle"></i>
-                        <span>Contact Us</span>
+                        <span>Hubungi Kami</span>
                     </a>
                 </div>
             </div>

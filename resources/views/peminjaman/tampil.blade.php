@@ -79,6 +79,7 @@
                             <th scope="col">Tanggal Pinjam</th>
                             <th scope="col">Tanggal Wajib Pengembalian</th>
                             <th scope="col">Tanggal Pengembalian</th>
+                            <th scope="col">Status Peminjaman</th>
                             <th scope="col">Kondisi Buku </th>
                             <th scope="col">Total Denda</th>
                         </tr>
@@ -99,6 +100,7 @@
                                 <td>{{ $item->tanggal_pinjam }}</td>
                                 <td>{{ $item->tanggal_wajib_kembali }}</td>
                                 <td>{{ $item->pengembalian ? $item->pengembalian->tanggal_kembali : 'Belum dikembalikan' }}</td>
+                                <td>{{ $item->detail ? $item->detail->status : 'tidak diketahui'}}</td>
                                 <td>{{ $item->pengembalian ? $item->pengembalian->kondisi : 'tidak diketahui'}}</td>
                                 <td>Rp {{ $item->pengembalian ? $item->pengembalian->hitungTotalDenda() : '0' }}</td>
                             </tr>

@@ -7,6 +7,7 @@ use App\Models\Buku;
 use App\Models\User;
 use App\Models\Profile;
 use App\Models\Peminjaman;
+use App\Models\DetailPeminjaman;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
@@ -87,12 +88,18 @@ class RiwayatPinjamService
 
             $tanggalWajibKembali = now()->addDays(3);
 
-            Peminjaman::create([
+           $peminjaman = Peminjaman::create([
                 'user_id' => $userId,
                 'buku_id' => $id,
                 'tanggal_pinjam' => now(),
                 'tanggal_wajib_kembali' => $tanggalWajibKembali,
                 'tanggal_pengembalian' => null,
+            ]);
+
+            //detail peminjaman
+            $detail =DetailPeminjaman::create([
+                'peminjaman_id' => $peminjaman->id,
+                'status' => 'dipinjam',
             ]);
 
             return ['success' => true];

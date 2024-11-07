@@ -89,7 +89,7 @@
                                                     style="text-decoration: none; color:white;">Detail</a></button>
                                             <button class="btn-sm btn-warning px-2"><a href="/buku/{{ $item->id }}/edit"
                                                     style="text-decoration: none;color:white">Edit</a></button>
-                                            <button class="btn-sm btn-danger px-3 delete-button" data-id="{{ $item->id }}">Delete</button>
+                                            <button class="btn-sm btn-danger px-3 delete-button" data-id="{{ $item->id }}">Hapus</button>
                                         </div>
                                     @endif
 

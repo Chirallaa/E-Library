@@ -46,4 +46,9 @@ class Pengembalian extends Model
     {
         return $this->belongsTo(Buku::class);
     }
+
+    public function detail(): HasOne
+    {
+        return $this->hasOne(DetailPeminjaman::class, 'pengembalian_id');
+    }
 }

@@ -17,10 +17,10 @@ class CreateRiwayatPinjamTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users');
             $table->foreignId('buku_id')->constrained('buku');
-            $table->timestamp('tanggal_pinjam');
-            $table->timestamp('tanggal_pengembalian')->nullable();
-            $table->timestamp('tanggal_wajib_kembali')->nullable();
-            $table->integer('denda_manual')->default(0);
+            $table->date('tanggal_pinjam');
+            $table->date('tanggal_pengembalian')->nullable();
+            $table->date('tanggal_wajib_kembali')->nullable();
+            $table->integer('denda')->default(0);
             $table->timestamps();
         });
     }

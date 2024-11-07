@@ -23,7 +23,7 @@ class LoginController extends Controller
 
         if ($user) {
             Auth::login($user);
-            return response()->json(['success' => true, 'redirect' => route('dashboard')]);
+            return response()->json(['success' => true, 'redirect' => route('dashboard'), 'message' => 'Login berhasil']);
         } else {
             return response()->json(['success' => false, 'message' => 'RFID tidak dikenal']);
         }
